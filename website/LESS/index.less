@@ -5,58 +5,293 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 /* Start your code here: */
 
+//imports
+@import "phone";
+@import "tablet";
+@import "desktop";
 
+//variables
 
+//colors
+@color-1: #fff;
+@color-2: #f4f6f7;
+@color-3: #e6f4f2;
+@color-4: #031741;
+@color-5: #aebebc;
+
+//padding
+@padding: 0 8%;
+
+//fonts
+@font: "Noto Sans TC", sans-serif;
+@cursive-font: "Sacramento", cursive;
+
+//mixins
+.font-thin {
+  font-family: @font;
+  font-weight: 100;
+}
+
+.font-regular {
+  font-family: @font;
+  font-weight: 400;
+}
+
+.font-bold {
+  font-family: @font;
+  font-weight: 700;
+}
+
+//styles
+.topbar {
+  background-color: @color-2;
+  display: flex;
+  justify-content: flex-end;
+  padding: @padding;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+
+    li {
+      padding: 0px 10px;
+
+      a {
+        color: @color-4;
+        text-decoration: none;
+        .font-regular;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: @padding;
+  border-bottom: 10px solid @color-3;
+
+  .menuSecOne {
+    width: 56%;
+    display: flex;
+    align-items: center;
+    div {
+      p {
+        color: orange;
+        font-size: 56px;
+      }
+    }
+    .menu {
+      width: 50%;
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        li {
+          a {
+            color: @color-4;
+            text-decoration: none;
+            .font-thin;
+            font-size: 22px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+  .menuSecTwo {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .social {
+      i {
+        font-size: 20px;
+        color: @color-5;
+        padding: 0px 5px;
+      }
+    }
+
+    .weather {
+      color: @color-4;
+      font-size: 22px;
+      .font-thin;
+    }
+
+    .search {
+      i {
+        font-size: 28px;
+        color: @color-5;
+      }
+    }
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: @color-2;
+  padding: 20px 0px;
+
+  h1 {
+    .font-thin;
+    font-size: 44px;
+    margin: 50px 0px;
+  }
+
+  h2 {
+    font-family: @cursive-font;
+    color: @color-4;
+    font-style: italic;
+    font-size: 40px;
+    margin: 5px 0px 30px 0px;
+  }
+
+  p {
+    .font-thin;
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+}

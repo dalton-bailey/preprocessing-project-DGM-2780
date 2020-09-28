@@ -1,0 +1,282 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* Start your code here: */
+@media (max-width: 768px) {
+  body .topbar {
+    display: none;
+  }
+  body .social {
+    display: none;
+  }
+  body .weather {
+    display: none;
+  }
+  body .mainNav .menuSecTwo {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  body .topbar {
+    display: none;
+  }
+  body .social {
+    display: none;
+  }
+  body .weather {
+    display: none;
+  }
+  body .mainNav .menuSecTwo {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1800px) {
+  body .mainNav {
+    height: 100px;
+  }
+}
+.font-thin {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 100;
+}
+.font-regular {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+}
+.font-bold {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
+}
+.topbar {
+  background-color: #f4f6f7;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 8%;
+}
+.topbar ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+.topbar ul li {
+  padding: 0px 10px;
+}
+.topbar ul li a {
+  color: #031741;
+  text-decoration: none;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  border-bottom: 10px solid #e6f4f2;
+}
+.mainNav .menuSecOne {
+  width: 56%;
+  display: flex;
+  align-items: center;
+}
+.mainNav .menuSecOne div p {
+  color: orange;
+  font-size: 56px;
+}
+.mainNav .menuSecOne .menu {
+  width: 50%;
+}
+.mainNav .menuSecOne .menu ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.mainNav .menuSecOne .menu ul li a {
+  color: #031741;
+  text-decoration: none;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.mainNav .menuSecTwo {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainNav .menuSecTwo .social i {
+  font-size: 20px;
+  color: #aebebc;
+  padding: 0px 5px;
+}
+.mainNav .menuSecTwo .weather {
+  color: #031741;
+  font-size: 22px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 100;
+}
+.mainNav .menuSecTwo .search i {
+  font-size: 28px;
+  color: #aebebc;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f6f7;
+  padding: 20px 0px;
+}
+.hero h1 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 100;
+  font-size: 44px;
+  margin: 50px 0px;
+}
+.hero h2 {
+  font-family: "Sacramento", cursive;
+  color: #031741;
+  font-style: italic;
+  font-size: 40px;
+  margin: 5px 0px 30px 0px;
+}
+.hero p {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  margin-bottom: 50px;
+}

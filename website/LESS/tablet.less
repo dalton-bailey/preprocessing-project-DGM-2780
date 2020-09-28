@@ -1,0 +1,23 @@
+@min1024: ~"(max-width: 1024px)";
+@max769: ~"(min-width: 769px)";
+
+body {
+  @media @max769 {
+    @media @min1024 {
+      .topbar {
+        display: none;
+      }
+      .social {
+        display: none;
+      }
+      .weather {
+        display: none;
+      }
+      .mainNav {
+        .menuSecTwo {
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}

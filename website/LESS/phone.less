@@ -1,0 +1,21 @@
+@min768: ~"(max-width: 768px)";
+
+body {
+    @media @min768 {
+        .topbar {
+            display: none;
+        }
+        .social {
+            display: none;
+        }
+        .weather {
+            display: none;
+        }
+
+        .mainNav {
+            .menuSecTwo {
+              justify-content: flex-end;
+            }
+          }
+    }
+}

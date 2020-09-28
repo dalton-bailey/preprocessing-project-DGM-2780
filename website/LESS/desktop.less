@@ -1,0 +1,13 @@
+@min1800: ~"(max-width: 1800px)";
+@max1025: ~"(min-width: 1025px)";
+
+body {
+  @media @max1025 {
+    @media @min1800 {
+      .mainNav {
+        height: 100px;
+        
+      }
+    }
+  }
+}
