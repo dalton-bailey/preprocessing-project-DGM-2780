@@ -188,13 +188,94 @@ html {
 }
 .stayHeroImage {
   background-image: url("/website/images/pool.jpg");
-  height: 500px;
+  height: 800px;
   background-size: cover;
   background-position: center;
 }
-.stayHeroImage div {
+.stayHeroImage .stayHero {
   display: flex;
   flex-direction: column;
+  color: #fff;
+  padding: 60px 0px 0px 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}
+.stayHeroImage .stayHero h1 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 100;
+  font-family: "Sacramento", cursive;
+  font-size: 36px;
+}
+.stayHeroImage .stayHero h2 {
+  font-weight: 100;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 76px;
+  text-transform: uppercase;
+  margin: 10px 0px;
+}
+.stayHeroImage .stayHero p {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+}
+.stayHeroImage .stayHero .buttonDiv {
+  margin-top: 30px;
+}
+.stayHeroImage .stayHero .button {
+  padding: 10px 30px;
+  background-color: #f4f6f7;
+  color: #031741;
+  border: 2px solid #031741;
+  border-radius: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+.stayHeroImage .stayHero .button:hover {
+  background-color: #031741;
+  color: #f4f6f7;
+  cursor: pointer;
+  border: 1px solid #031741;
+}
+.staySecOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0px;
+  color: #031741;
+}
+.staySecOne h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+.staySecOne p {
+  font-weight: 100;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  width: 60%;
+  text-align: center;
+}
+.staySecTwo {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 100px;
+}
+.staySecTwo .el {
+  background-position: center;
+  background-size: cover;
+  width: 325px;
+  height: 150px;
+  margin: 30px;
 }
 .font-thin {
   font-family: "Noto Sans TC", sans-serif;
