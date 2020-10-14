@@ -1,21 +1,31 @@
 @min768: ~"(max-width: 768px)";
 
 body {
-    @media @min768 {
-        .topbar {
-            display: none;
+  @media @min768 {
+    .topbar {
+      display: none;
+    }
+    .mainNav {
+      .menuSecOne {
+        justify-content: flex-end;
+        .menu {
+          display: none;
         }
+      }
+      .menuSecTwo {
+        justify-content: flex-end;
         .social {
-            display: none;
+          display: none;
         }
         .weather {
-            display: none;
+          display: none;
         }
-
-        .mainNav {
-            .menuSecTwo {
-              justify-content: flex-end;
-            }
+        .search {
+          i {
+            color: orange;
           }
+        }
+      }
     }
+  }
 }

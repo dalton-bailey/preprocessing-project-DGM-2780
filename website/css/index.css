@@ -139,34 +139,62 @@ html {
   body .topbar {
     display: none;
   }
-  body .social {
-    display: none;
+  body .mainNav .menuSecOne {
+    justify-content: flex-end;
   }
-  body .weather {
+  body .mainNav .menuSecOne .menu {
     display: none;
   }
   body .mainNav .menuSecTwo {
     justify-content: flex-end;
+  }
+  body .mainNav .menuSecTwo .social {
+    display: none;
+  }
+  body .mainNav .menuSecTwo .weather {
+    display: none;
+  }
+  body .mainNav .menuSecTwo .search i {
+    color: orange;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   body .topbar {
     display: none;
   }
-  body .social {
-    display: none;
+  body .mainNav .menuSecOne {
+    justify-content: flex-end;
   }
-  body .weather {
+  body .mainNav .menuSecOne .menu {
     display: none;
   }
   body .mainNav .menuSecTwo {
     justify-content: flex-end;
+  }
+  body .mainNav .menuSecTwo .social {
+    display: none;
+  }
+  body .mainNav .menuSecTwo .weather {
+    display: none;
+  }
+  body .mainNav .menuSecTwo .search i {
+    color: orange;
   }
 }
 @media (min-width: 1025px) and (max-width: 1800px) {
   body .mainNav {
     height: 100px;
   }
+}
+.stayHeroImage {
+  background-image: url("/website/images/pool.jpg");
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+.stayHeroImage div {
+  display: flex;
+  flex-direction: column;
 }
 .font-thin {
   font-family: "Noto Sans TC", sans-serif;
@@ -179,6 +207,23 @@ html {
 .font-bold {
   font-family: "Noto Sans TC", sans-serif;
   font-weight: 700;
+}
+.btn {
+  padding: 10px 30px;
+  background-color: #f4f6f7;
+  color: #031741;
+  border: 2px solid #031741;
+  border-radius: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+.hover {
+  background-color: #031741;
+  color: #f4f6f7;
+  cursor: pointer;
 }
 .topbar {
   background-color: #f4f6f7;
@@ -213,9 +258,11 @@ html {
   display: flex;
   align-items: center;
 }
-.mainNav .menuSecOne div p {
+.mainNav .menuSecOne div p a {
   color: orange;
   font-size: 56px;
+  margin: 15px 0px;
+  text-decoration: none;
 }
 .mainNav .menuSecOne .menu {
   width: 50%;
@@ -266,6 +313,7 @@ html {
   font-weight: 100;
   font-size: 44px;
   margin: 50px 0px;
+  text-align: center;
 }
 .hero h2 {
   font-family: "Sacramento", cursive;
@@ -279,4 +327,31 @@ html {
   font-weight: 100;
   font-size: 14px;
   margin-bottom: 50px;
+  text-align: center;
+}
+.hero div {
+  margin-bottom: 30px;
+}
+.hero .button {
+  padding: 10px 30px;
+  background-color: #f4f6f7;
+  color: #031741;
+  border: 2px solid #031741;
+  border-radius: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+.hero .button:hover {
+  background-color: #031741;
+  color: #f4f6f7;
+  cursor: pointer;
+}
+.heroImage {
+  background-image: url("/website/images/courtyard.jpg");
+  height: 500px;
+  background-size: cover;
+  background-position: bottom;
 }

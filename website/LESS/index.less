@@ -145,6 +145,7 @@ html {
 @import "phone";
 @import "tablet";
 @import "desktop";
+@import "stay";
 
 //variables
 
@@ -176,6 +177,24 @@ html {
 .font-bold {
   font-family: @font;
   font-weight: 700;
+}
+
+.btn {
+  padding: 10px 30px;
+  background-color: @color-2;
+  color: @color-4;
+  border: 2px solid @color-4;
+  border-radius: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  .font-regular;
+  text-decoration: none;
+}
+
+.hover {
+  background-color: @color-4;
+  color: @color-2;
+  cursor: pointer;
 }
 
 //styles
@@ -215,10 +234,12 @@ html {
     display: flex;
     align-items: center;
     div {
-      p {
+      p a{
         color: orange;
         font-size: 56px;
-      }
+        margin: 15px 0px;
+        text-decoration: none;
+            }
     }
     .menu {
       width: 50%;
@@ -279,6 +300,7 @@ html {
     .font-thin;
     font-size: 44px;
     margin: 50px 0px;
+    text-align: center;
   }
 
   h2 {
@@ -293,5 +315,29 @@ html {
     .font-thin;
     font-size: 14px;
     margin-bottom: 50px;
+    text-align: center;
+  }
+
+  div {
+    margin-bottom: 30px;
+  }
+
+  .button {
+    .btn;
+  }
+
+
+  .button:hover {
+    .hover;
   }
 }
+
+.heroImage {
+  background-image: url("/website/images/courtyard.jpg");
+  height: 500px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+
+
