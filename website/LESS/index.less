@@ -155,6 +155,7 @@ html {
 @color-3: #e6f4f2;
 @color-4: #031741;
 @color-5: #aebebc;
+@color-6: #ee5d21;
 
 //padding
 @padding: 0 8%;
@@ -235,7 +236,7 @@ html {
     align-items: center;
     div {
       p a{
-        color: orange;
+        color: @color-6;
         font-size: 56px;
         margin: 15px 0px;
         text-decoration: none;
@@ -337,6 +338,99 @@ html {
   height: 500px;
   background-size: cover;
   background-position: bottom;
+}
+
+.secOne {
+  padding: 0 8%;
+  margin: 100px 0px;
+
+  h1 {
+    .font-regular;
+    color: @color-4;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    .font-regular;
+    color: @color-6;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    .font-regular;
+    color: @color-4;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+
+  .la {
+    color: @color-4;
+  }
+
+  .rejuv {
+    color: @color-6;
+  }
+
+  .rejuv:hover {
+    color: red;
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+
+
+
+//footer 
+
+footer {
+  background-color: @color-2;
+  display: flex;
+  justify-content: space-around;
+  height: 500px;
+  padding: 60px 8%;
+
+  .list {
+
+    h1 {
+      .font-thin;
+      color: @color-6;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+  
+    ul {
+      display: flex;
+      flex-direction: column;
+  
+      li {
+        .font-thin;
+        color: gray;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-size: 12px;
+      }
+    }
+
+    .social {
+      h2 {
+        .font-thin;
+        color: gray;
+        text-transform: uppercase;
+      }
+    }
+
+  }
+
+
+
 }
 
 
