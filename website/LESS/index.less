@@ -490,6 +490,74 @@ html {
   }
 }
 
+.secFive {
+  display: flex;
+
+  .orange, .blue {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8%;
+    h1 {
+      font-family: @cursive-font;
+      font-size: 40px;
+    }
+    h2 {
+      .font-thin;
+      font-size: 40px;
+    }
+
+    p {
+      .font-regular;
+      line-height: 20px;
+      text-align: center;
+      margin: 20px 0px 40px 0px;
+    }
+
+  }
+  
+  .orange {
+    background-color: @color-6;
+    color: @color-1;
+
+    .button {
+      color: @color-1;
+      .font-regular;
+      font-size: 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid @color-1;
+      padding: 10px 15px;
+    }
+
+    .button:hover {
+      .square-btn-hover
+    }
+  }
+
+  .blue {
+    background-color: #7acdce;
+    color: @color-4;
+
+    .button {
+      color: @color-4;
+      .font-regular;
+      font-size: 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid @color-4;
+      padding: 10px 15px;
+    }
+
+    .button:hover {
+      background-color: @color-4;
+      color: @color-1;
+    }
+  }
+}
+
 
 
 

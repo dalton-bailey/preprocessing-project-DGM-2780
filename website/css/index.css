@@ -180,6 +180,13 @@ html {
   body .mainNav .menuSecTwo .search i {
     color: orange;
   }
+  body .secFour .boxes .box {
+    width: 49.7%;
+  }
+  body .secFour .boxes .three,
+  body .secFour .boxes .four {
+    display: none;
+  }
   body .staySecThree {
     display: flex;
     flex-direction: column;
@@ -192,6 +199,10 @@ html {
   }
   body .staySecThree .one {
     margin-bottom: 50px;
+  }
+  body .secFive {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (min-width: 1025px) and (max-width: 1800px) {
@@ -649,6 +660,73 @@ html {
   height: 30px;
   text-align: center;
   font-size: 24px;
+}
+.secFive {
+  display: flex;
+}
+.secFive .orange,
+.secFive .blue {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8%;
+}
+.secFive .orange h1,
+.secFive .blue h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 40px;
+}
+.secFive .orange h2,
+.secFive .blue h2 {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+}
+.secFive .orange p,
+.secFive .blue p {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  margin: 20px 0px 40px 0px;
+}
+.secFive .orange {
+  background-color: #ee5d21;
+  color: #fff;
+}
+.secFive .orange .button {
+  color: #fff;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+}
+.secFive .orange .button:hover {
+  background-color: #ad1f21;
+  color: #fff;
+}
+.secFive .blue {
+  background-color: #7acdce;
+  color: #031741;
+}
+.secFive .blue .button {
+  color: #031741;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #031741;
+  padding: 10px 15px;
+}
+.secFive .blue .button:hover {
+  background-color: #031741;
+  color: #fff;
 }
 footer {
   background-color: #f4f6f7;
