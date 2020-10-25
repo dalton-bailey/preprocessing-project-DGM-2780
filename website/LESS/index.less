@@ -198,6 +198,18 @@ html {
   cursor: pointer;
 }
 
+//sticky
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky + .main-content {
+	padding-top: 200px;
+}
+
+
 //styles
 .topbar {
   background-color: @color-2;
@@ -229,6 +241,7 @@ html {
   align-items: center;
   padding: @padding;
   border-bottom: 10px solid @color-3;
+  background-color: @color-1;
 
   .menuSecOne {
     width: 56%;
