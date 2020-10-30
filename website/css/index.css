@@ -339,6 +339,10 @@ html {
   text-transform: uppercase;
   font-size: 18px;
 }
+.staySecTwo p:hover {
+  cursor: pointer;
+  color: red;
+}
 .staySecThree {
   display: flex;
   justify-content: space-evenly;
@@ -649,7 +653,6 @@ html {
 .secFour .boxes .box {
   width: 24.8%;
   height: 500px;
-  background-image: url(../images/rollercoaster.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -689,6 +692,18 @@ html {
   height: 30px;
   text-align: center;
   font-size: 24px;
+}
+.secFour .boxes .one {
+  background-image: url(../images/rollercoaster.jpg);
+}
+.secFour .boxes .two {
+  background-image: url(../images/surfing.jpg);
+}
+.secFour .boxes .three {
+  background-image: url('../images/brewery.jpg');
+}
+.secFour .boxes .four {
+  background-image: url('../images/lake.jpg');
 }
 .secFive {
   display: flex;
